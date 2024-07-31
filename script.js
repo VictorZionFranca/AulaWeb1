@@ -32,11 +32,11 @@ function validacampos() {
 }
 
 function mascara (teclado, mascara) {
-    let posicao = teclado.value.length;
+    let posicao = teclado.length;
     let saida = mascara.substring(1,0);
     let texto = mascara.substring(posicao);
-    if (texto.substring(0,1) !== saida) {
-        texto.value =+ texto.substring(0,1)
+    if (texto.substring(0,1) != saida) {
+        teclado.value += texto.substring(0,1)
     }
 }
 
